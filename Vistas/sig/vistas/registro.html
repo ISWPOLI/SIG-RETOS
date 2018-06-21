@@ -44,72 +44,65 @@
 
 
 <div class="mdl-typography--text-center">
-  <h3>Agregar proyecto</h3>
+  <h3>Registrar Entidad</h3>
   <br></br>
 </div>
-        <center>
 
 <div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--2-col">
-        
-    </div>
+  
+  <div class="mdl-cell mdl-cell--1-col"> </div>
+  <div class="mdl-cell mdl-cell--1-col"> </div>
+  <div class="mdl-cell mdl-cell--1-col"> </div>
+  
   <div class="mdl-cell mdl-cell--6-col">
     <form action="#">
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">      
         <input class="mdl-textfield__input" type="text" id="nombre">
-        <label class="mdl-textfield__label" for="nombre">Nombre proyecto</label>
+        <label class="mdl-textfield__label" for="nombre">Nombre </label>
       </div>
-      <br></br>
       <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="x">
-        <label class="mdl-textfield__label" for="x">Coordenada x</label>
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="nit">
+        <label class="mdl-textfield__label" for="nit">Nit</label>
         <span class="mdl-textfield__error">Input is not a number!</span>
       </div>
-      <br></br>
-      <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="y">
-        <label class="mdl-textfield__label" for="y">Coordenada y</label>
-        <span class="mdl-textfield__error">Input is not a number!</span>
-      </div>
-
-      <br></br>
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">      
-        <input class="mdl-textfield__input" type="text" id="nombre">
-        <label class="mdl-textfield__label" for="nombre">Poligono</label>
+        <input class="mdl-textfield__input" type="text" id="encargado">
+        <label class="mdl-textfield__label" for="encargado">Nombre Encargado</label>
       </div>
-      <br></br>
-    <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="x">
-        <label class="mdl-textfield__label" for="x">Numero de proyectos</label>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">      
+        <input class="mdl-textfield__input" type="text" id="correo">
+        <label class="mdl-textfield__label" for="correo">Correo</label>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="nit">
+        <label class="mdl-textfield__label" for="nit">Telefono de contacto</label>
         <span class="mdl-textfield__error">Input is not a number!</span>
-    </div>  
-    
-      
-
-      
-    </form>    
-  </div>
-  <div class="mdl-cell mdl-cell--6-col">
-      
-  </div>
-
-</div>    
-      </center>
-
-<div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--2-col">
-        
-    </div> 
-    
-     <div class="mdl-cell mdl-cell--4-col">
-          <button id="show-dialog" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="background-color: #ff5722;">
-      Guardar
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">      
+        <input class="mdl-textfield__input" type="text" id="usuario">
+        <label class="mdl-textfield__label" for="usuario">Usuario</label>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="password"  id="sample4">
+        <label class="mdl-textfield__label" for="sample4">Contraseña</label>
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">      
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="terminos">
+          <input type="checkbox" id="terminos" class="mdl-checkbox__input" checked>
+          <span class="mdl-checkbox__label">Acepto terminos y condiciones</span>
+        </label> 
+      </div> 
+      <br></br>
+      <center>
+    <button id="show-dialog" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="background-color: #ff5722;">
+      Registrarse
     </button>
 
     <dialog class="mdl-dialog">
     <div class="mdl-dialog__content">
       <p>
-        Se ha guardado
+        Sus datos han sido enviados para registro y control
       </p>
     </div>
     <div class="mdl-dialog__actions-center">
@@ -131,16 +124,11 @@
       dialog.close();
     });
   </script>
-    </div> 
-    
-    
-     <div class="mdl-cell mdl-cell--4-col">
-            <a href="descripcion.html">
-     <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="background-color: #ff5722;">
-        Descripcion
-      </button>
-    </a>
-    </div> 
-   
+</center>
+    </form>
+  </div>
+  
+</div>      
+
   </body>
 </html>

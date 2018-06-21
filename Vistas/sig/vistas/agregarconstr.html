@@ -47,100 +47,68 @@
   <h3>Agregar proyecto</h3>
   <br></br>
 </div>
-        <center>
 
 <div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--2-col">
-        
-    </div>
+  
+  <div class="mdl-cell mdl-cell--6-col">
+    <img src="images/haru.gif" width="500" height="300"/>
+  </div>
+    
   <div class="mdl-cell mdl-cell--6-col">
     <form action="#">
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">      
         <input class="mdl-textfield__input" type="text" id="nombre">
         <label class="mdl-textfield__label" for="nombre">Nombre proyecto</label>
       </div>
+      
       <br></br>
       <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="x">
-        <label class="mdl-textfield__label" for="x">Coordenada x</label>
-        <span class="mdl-textfield__error">Input is not a number!</span>
+        <textarea class="mdl-textfield__input" type="text" rows= "3" id="descripcion" ></textarea>
+        <label class="mdl-textfield__label" for="descripcion">Descripción del proyecto</label>
       </div>
-      <br></br>
-      <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="y">
-        <label class="mdl-textfield__label" for="y">Coordenada y</label>
-        <span class="mdl-textfield__error">Input is not a number!</span>
-      </div>
-
       <br></br>
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">      
         <input class="mdl-textfield__input" type="text" id="nombre">
-        <label class="mdl-textfield__label" for="nombre">Poligono</label>
+        <label class="mdl-textfield__label" for="nombre">Correo</label>
       </div>
       <br></br>
-    <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="x">
-        <label class="mdl-textfield__label" for="x">Numero de proyectos</label>
-        <span class="mdl-textfield__error">Input is not a number!</span>
-    </div>  
-    
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+          <input type="text" value="" class="mdl-textfield__input" id="estadoConstruccion" readonly>
+          <input type="hidden" value="" name="estadoConstruccion">
+          <label for="estadoConstruccion" class="mdl-textfield__label">Estado Construcción</label>
+            <ul for="estadoConstruccion" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+              <li class="mdl-menu__item" data-val="DEU">Obra Negra</li>
+              <li class="mdl-menu__item" data-val="BLR">Obra Gris</li>
+              <li class="mdl-menu__item" data-val="RUS">Terminado</li>
+            </ul>
+        </div>
+      <br></br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+          <input type="text" value="" class="mdl-textfield__input" id="modo" readonly>
+          <input type="hidden" value="" name="modo">
+          <label for="modo" class="mdl-textfield__label">Modo</label>
+            <ul for="modo" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+              <li class="mdl-menu__item" data-val="DEU">Venta</li>
+              <li class="mdl-menu__item" data-val="BLR">Arriendo</li>
+              <li class="mdl-menu__item" data-val="RUS">Permuta</li>
+            </ul>
+        </div>
+      <br></br>
+
+
+  
+
+    </form>
       
-
-      
-    </form>    
-  </div>
-  <div class="mdl-cell mdl-cell--6-col">
-      
-  </div>
-
-</div>    
-      </center>
-
-<div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--2-col">
-        
-    </div> 
-    
-     <div class="mdl-cell mdl-cell--4-col">
-          <button id="show-dialog" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="background-color: #ff5722;">
-      Guardar
-    </button>
-
-    <dialog class="mdl-dialog">
-    <div class="mdl-dialog__content">
-      <p>
-        Se ha guardado
-      </p>
-    </div>
-    <div class="mdl-dialog__actions-center">
-      <center>      
-        <button type="button" class="mdl-button close">Acepto</button>
-      </center>
-    </div>
-  </dialog>
-  <script>
-    var dialog = document.querySelector('dialog');
-    var showDialogButton = document.querySelector('#show-dialog');
-    if (! dialog.showModal) {
-      dialogPolyfill.registerDialog(dialog);
-    }
-    showDialogButton.addEventListener('click', function() {
-      dialog.showModal();
-    });
-    dialog.querySelector('.close').addEventListener('click', function() {
-      dialog.close();
-    });
-  </script>
-    </div> 
-    
-    
-     <div class="mdl-cell mdl-cell--4-col">
-            <a href="descripcion.html">
+           <a href="agregar.html">
      <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="background-color: #ff5722;">
-        Descripcion
+        Continuar
       </button>
     </a>
-    </div> 
-   
+  </div>
+  
+</div>      
+
   </body>
 </html>

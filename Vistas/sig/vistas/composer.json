@@ -1,0 +1,13 @@
+{
+    "name": "vendor/sig",
+    "description": "Description of project sig.",
+    "authors": [
+        {
+            "name": "MFOV",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "symfony/symfony": "dev-master"
+    }
+}

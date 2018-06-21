@@ -1,23 +1,16 @@
 <html>
   <head>
 
-
     <!--BOTON-->
     <script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_orange-indigo.min.css" />
     <!-- Material Design icon font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-
      <!--BOTON-->
     <script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_orange-indigo.min.css" />
     <!-- Material Design icon font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-
-
-
      <!--cajas de texto-->
     <!-- Material Design Lite -->
     <script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
@@ -47,62 +40,61 @@
   <h3>Agregar proyecto</h3>
   <br></br>
 </div>
-        <center>
 
 <div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--2-col">
-        
+  
+
+    
+  <div class="mdl-cell mdl-cell--4-col">
+
+      
+   
+  </div>
+  
+     <div class="mdl-cell mdl-cell--6-col">
+     
+          
+                <form action="#">
+      <br></br>
+      <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="nAlcobas">
+        <label class="mdl-textfield__label" for="Nalcobas">Numero de alcobas</label>
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+      <br></br>
+      <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="nPlantas">
+        <label class="mdl-textfield__label" for="y">Numero de plantas</label>
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+      <br>
+     <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="nBaños">
+        <label class="mdl-textfield__label" for="Nbaños">Numero de baños</label>
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+      <br>
+
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+        <input type="text" value="" class="mdl-textfield__input" id="sample3" readonly>
+        <input type="hidden" value="" name="sample3">
+        <label for="sample3" class="mdl-textfield__label">Country</label>
+        <ul for="sample3" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+            <li class="mdl-menu__item" data-val="DEU">Germany</li>
+            <li class="mdl-menu__item" data-val="BLR">Belarus</li>
+            <li class="mdl-menu__item" data-val="RUS">Russia</li>
+        </ul>
     </div>
-  <div class="mdl-cell mdl-cell--6-col">
-    <form action="#">
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">      
-        <input class="mdl-textfield__input" type="text" id="nombre">
-        <label class="mdl-textfield__label" for="nombre">Nombre proyecto</label>
-      </div>
-      <br></br>
-      <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="x">
-        <label class="mdl-textfield__label" for="x">Coordenada x</label>
-        <span class="mdl-textfield__error">Input is not a number!</span>
-      </div>
-      <br></br>
-      <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="y">
-        <label class="mdl-textfield__label" for="y">Coordenada y</label>
-        <span class="mdl-textfield__error">Input is not a number!</span>
-      </div>
-
-      <br></br>
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">      
-        <input class="mdl-textfield__input" type="text" id="nombre">
-        <label class="mdl-textfield__label" for="nombre">Poligono</label>
-      </div>
-      <br></br>
-    <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="x">
-        <label class="mdl-textfield__label" for="x">Numero de proyectos</label>
-        <span class="mdl-textfield__error">Input is not a number!</span>
-    </div>  
-    
       
 
-      
-    </form>    
-  </div>
-  <div class="mdl-cell mdl-cell--6-col">
-      
-  </div>
+      <br>
+                <label for="vigilancia" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+  <input type="checkbox" id="vigilancia" class="mdl-checkbox__input">
+        <span class="mdl-checkbox__label">Posee Vigilancia</span>
+      </label>
+      <br><br>
 
-</div>    
-      </center>
-
-<div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--2-col">
-        
-    </div> 
-    
-     <div class="mdl-cell mdl-cell--4-col">
-          <button id="show-dialog" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="background-color: #ff5722;">
+    <button id="show-dialog" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="background-color: #ff5722;">
       Guardar
     </button>
 
@@ -113,9 +105,9 @@
       </p>
     </div>
     <div class="mdl-dialog__actions-center">
-      <center>      
+      
         <button type="button" class="mdl-button close">Acepto</button>
-      </center>
+      
     </div>
   </dialog>
   <script>
@@ -131,16 +123,14 @@
       dialog.close();
     });
   </script>
-    </div> 
-    
-    
-     <div class="mdl-cell mdl-cell--4-col">
-            <a href="descripcion.html">
-     <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="background-color: #ff5722;">
-        Descripcion
-      </button>
-    </a>
-    </div> 
+
+    </form>
+      
    
+  </div> 
+    
+    
+</div>      
+
   </body>
 </html>

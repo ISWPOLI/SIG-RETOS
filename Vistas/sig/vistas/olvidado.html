@@ -47,31 +47,44 @@
   <h3>SIGE </h3>
   <h5>Estas en tu casa</h5>
   <br></br>
-</div>
-
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--4-col"></div>
-  <div class="mdl-cell mdl-cell--6-col">
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <a href="agregarconstr.html">
-        <button id="agregar" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="background-color: #ff5722;">
-          Agregar proyecto
-        </button>
-        </a>
-      </div>
-      
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <a href="agregarconstr.html">
-        <button id="editar" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="background-color: #ff5722;">
-          Editar proyecto
-        </button>  
-      </a>
-      </div>   
-  </div>
   
-</div>      
-     
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" id="correo">
+    <label class="mdl-textfield__label" for="correo">Correo Electronico</label>
+  </div>
 
+
+  <br>
+    <button id="show-dialog" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="background-color: #ff5722;">
+      Enviar confirmacion
+    </button>
+
+    <dialog class="mdl-dialog">
+    <div class="mdl-dialog__content">
+      <p>
+        El mensaje ha sido enviado a su correo
+      </p>
+    </div>
+    <div class="mdl-dialog__actions-center">
+      <button type="button" class="mdl-button close">Acepto</button>
+    </div>
+  </dialog>
+  <script>
+    var dialog = document.querySelector('dialog');
+    var showDialogButton = document.querySelector('#show-dialog');
+    if (! dialog.showModal) {
+      dialogPolyfill.registerDialog(dialog);
+    }
+    showDialogButton.addEventListener('click', function() {
+      dialog.showModal();
+    });
+    dialog.querySelector('.close').addEventListener('click', function() {
+      dialog.close();
+    });
+  </script>
+
+  <br>                  
+</div>
 
 
 
